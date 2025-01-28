@@ -12,7 +12,7 @@ For a comprehensive summary of the background of Optimal Transport (OT) and its 
 
 For more specialized applications of OT in computational biology, consider the following articles:
 
--   [Optimal transport improves cell–cell similarity inference in single-cell omics data](10.1093/bioinformatics/btac084)
+-   [Optimal transport improves cell–cell similarity inference in single-cell omics data](https://doi.org/10.1093/bioinformatics/btac084)
 
 -   [Learning single-cell perturbation responses using neural optimal transport](https://doi.org/10.1038/s41592-023-01969-x)
 
@@ -29,10 +29,8 @@ These resources provide in-depth insights into specific applications of OT in va
 For a deeper understanding of the background, mathematics, and computational aspects of OT, the following books are highly recommended:
 
 -   [Computational Optimal Transport](https://optimaltransport.github.io/book/)
-    -   Authors: Gabriel Peyré and Marco Cuturi
     -   This book provides a comprehensive introduction to the computational aspects of Optimal Transport, including algorithms and applications.
 -   [Optimal Transport for Applied Mathematicians](https://doi.org/10.1007/978-3-319-20828-2)
-    -   Author: Filippo Santambrogio
     -   This book offers a rigorous mathematical treatment of OT theory, suitable for researchers in related fields.
 
 These books serve as excellent resources for those looking to deepen their understanding of the theoretical foundations and practical implementations of OT.
