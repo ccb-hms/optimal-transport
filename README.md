@@ -29,7 +29,7 @@ These resources provide in-depth insights into specific applications of OT in va
 For a deeper understanding of the background, mathematics, and computational aspects of OT, the following books are highly recommended:
 
 -   [Computational Optimal Transport](https://optimaltransport.github.io/book/)
-    -   This book provides a comprehensive introduction to the computational aspects of Optimal Transport, including algorithms and applications.
+    -   This book provides a comprehensive introduction to the computational aspects of OT, including algorithms and applications.
 -   [Optimal Transport for Applied Mathematicians](https://doi.org/10.1007/978-3-319-20828-2)
     -   This book offers a rigorous mathematical treatment of OT theory, suitable for researchers in related fields.
 
