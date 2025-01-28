@@ -1,10 +1,10 @@
 # -----------------------------
 # Optimal Transport
 # Code Examples
-# 
+#
 # Author: Anthony Christidis
 # CCB, DBMI, HMS
-# 
+#
 # -----------------------------
 
 # _____________________
@@ -20,7 +20,7 @@ cost_matrix <- matrix(
       6, 4, 3, 7, 5,
       7, 8, 6, 5, 6,
       4, 6, 7, 3, 9,
-      9, 7, 5, 2, 8), 
+      9, 7, 5, 2, 8),
     nrow = 5, byrow = TRUE
 )
 
@@ -38,6 +38,9 @@ print(paste("Total Cost:", total_cost))
 # _____________________
 # Karantovich Example
 # _____________________
+
+# Load OT library
+library(transport)
 
 # Define the source and target distributions as probability vectors
 a <- c(0.2, 0.2, 0.2, 0.2, 0.2)
@@ -68,7 +71,7 @@ print(paste("Total Transport Cost:", total_cost))
 # _____________________
 
 # Library to simulate data
-library(MASS) 
+library(MASS)
 
 # Set seed for reproducibility
 set.seed(1)
@@ -98,7 +101,7 @@ ot_plan <- transport(source_weights, target_weights, cost_matrix, method = "netw
 
 # Display the resulting transport plan
 print("Optimal Transport Plan:")
-print(head(ot_plan, 10))  
+print(head(ot_plan, 10))
 
 # Compute the total transport cost
 total_cost <- sum(ot_plan * cost_matrix)
@@ -108,14 +111,14 @@ cat("Total Transport Cost:", total_cost, "\n")
 print("Expected Shift Verification:")
 
 # Compare the first few mappings
-for (i in 1:10) {  
+for (i in 1:10) {
     source_index <- ot_plan$from[i]
     target_index <- ot_plan$to[i]
-    
+
     # Compare the original source and target coordinates
     original_source <- source_samples[source_index,]
     intended_target <- target_samples[target_index,]
-    
+
     # Print results
     cat(sprintf("Source (%.2f, %.2f) mapped to Target (%.2f, %.2f)\n",
                 original_source[1], original_source[2],
@@ -132,10 +135,10 @@ transport_map <- data.frame(
 
 # Plot with ggplot2
 library(ggplot2)
-ggplot(transport_map) + 
+ggplot(transport_map) +
     geom_point(aes(x = SourceX, y = SourceY), color = "blue", alpha = 0.5) +
     geom_point(aes(x = TargetX, y = TargetY), color = "red", alpha = 0.5) +
-    geom_segment(aes(x = SourceX, y = SourceY, xend = TargetX, yend = TargetY), 
+    geom_segment(aes(x = SourceX, y = SourceY, xend = TargetX, yend = TargetY),
                  arrow = arrow(length = unit(0.2, "cm")), alpha = 0.3) +
     labs(title = "Optimal Transport Mapping", x = "X", y = "Y") +
     theme_minimal()
@@ -143,6 +146,9 @@ ggplot(transport_map) +
 # __________________________
 # scDiagnostics Application
 # __________________________
+
+# Load BioC package
+library(scDiagnostics)
 
 # Load data
 data("reference_data")
