@@ -1,0 +1,33 @@
+\frametitle{Kantorovich Problem Implementation in R}
+		
+		\begin{lstlisting}[language=R, basicstyle=\ttfamily\small, frame=single, commentstyle=\color{gray}, keywordstyle=\color{blue}, stringstyle=\color{red}]
+			# Load the necessary package
+			library(transport)
+			
+			# Define the source distribution
+			source_masses <- c(0.2, 0.2, 0.2, 0.2, 0.2)
+			
+			# Define the target distribution
+			target_masses <- c(0.15, 0.25, 0.25, 0.15, 0.2)
+			
+			# Define the cost matrix
+			cost_matrix <- matrix(
+			c(1, 2, 3, 4, 5,
+			2, 1, 3, 4, 5,
+			3, 3, 1, 2, 5,
+			4, 4, 2, 1, 3,
+			5, 5, 5, 3, 1),
+			nrow = 5, byrow = TRUE
+			)
+			
+			# Solve the Kantorovich problem
+			optimal_transport <- transport(source_masses, target_masses, cost_matrix, method = "network")
+			
+			# Print the optimal transport plan
+			cat("Optimal Transport Plan:\n")
+			print(optimal_transport)
+			
+			# Compute and print the total transport cost
+			total_cost <- sum(optimal_transport * cost_matrix)
+			cat("Total Transport Cost:", total_cost, "\n")
+		\end{lstlisting}

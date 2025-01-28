@@ -1,0 +1,73 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: OT_Journal_Club.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: OT_Journal_Club-blx.bib
+Database file #2: ref.bib
+Illegal end of database file---line 131 of file ref.bib
+ :  url = {https://github.com/ccb-hms/scDiagnostics},
+ :                                                   
+I'm skipping whatever remains of this entry
+Biblatex version: 3.19
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 8 entries,
+            6399 wiz_defined-function locations,
+            1250 strings with 10886 characters,
+and the built_in function-call counts, 110055 in all, are:
+= -- 10134
+> -- 1023
+< -- 233
++ -- 4001
+- -- 430
+* -- 7729
+:= -- 14582
+add.period$ -- 0
+call.type$ -- 8
+change.case$ -- 129
+chr.to.int$ -- 42
+cite$ -- 14
+duplicate$ -- 12021
+empty$ -- 8656
+format.name$ -- 781
+if$ -- 20939
+int.to.chr$ -- 0
+int.to.str$ -- 17
+missing$ -- 0
+newline$ -- 432
+num.names$ -- 355
+pop$ -- 3173
+preamble$ -- 1
+purify$ -- 224
+quote$ -- 0
+skip$ -- 1485
+stack$ -- 0
+substring$ -- 19320
+swap$ -- 1520
+text.length$ -- 233
+text.prefix$ -- 7
+top$ -- 1
+type$ -- 260
+warning$ -- 0
+while$ -- 1880
+width$ -- 0
+write$ -- 425
+(There was 1 error message)
